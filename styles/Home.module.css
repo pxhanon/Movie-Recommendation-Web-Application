@@ -1,8 +1,18 @@
-.container {
-  padding: 0 2rem;
+.sectionWrapper {
+  margin-top: 1.5rem;
 }
 
 .main {
+  padding-bottom: 4rem;
+}
+
+.container {
+  background-color: var(--blue50);
+  padding-top: 70px;
+}
+
+
+/* .main {
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -113,4 +123,4 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */
