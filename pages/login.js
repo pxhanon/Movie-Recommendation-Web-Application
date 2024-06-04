@@ -8,6 +8,9 @@ import { useEffect, useState } from "react"
 
 import { magic } from "../lib/magic-client";
 
+import Image from "next/image";
+
+
 const Login = () => {
     const [email, setEmail] = useState("")
     const [userMsg, setUserMsg] = useState("")
@@ -21,7 +24,7 @@ const Login = () => {
         };
         router.events.on("routeChangeComplete", handleComplete);
         router.events.on("routeChangeError", handleComplete);
-    
+
         return () => {
           router.events.off("routeChangeComplete", handleComplete);
           router.events.off("routeChangeError", handleComplete);
@@ -33,12 +36,12 @@ const Login = () => {
         const email = e.target.value
         setEmail(email)
     }
-    
+
     const handleLoginWithEmail = async (e) => {
         e.preventDefault()
 
         if (email) {
-            if (email === "pxhanonxhumparat@gmail.com") {
+            if (email === "pxhanonxhumparat@gmail.com" || "chappys25432000@gmail.com") {
                 try {
                     setIsLoading(true)
                     const didToken = await magic.auth.loginWithMagicLink({ email });
@@ -51,7 +54,7 @@ const Login = () => {
                               "Content-Type": "application/json",
                             },
                         });
-              
+
                         const loggedInResponse = await response.json();
                         if (loggedInResponse.done) {
                             router.push("/");
@@ -84,6 +87,13 @@ const Login = () => {
             <header className={styles.header}>
                 <div className={styles.headerWrapper}>
                     <Link className={styles.logoLink} href="/">
+                        <Image
+                        src="/static/rec_icon2.svg"
+                        alt="Rec icon"
+                        width={32}
+                        height={32}
+                        className={styles.logoRec}
+                        />
                         <div className={styles.logoWrapper}>
                             R E C
                         </div>

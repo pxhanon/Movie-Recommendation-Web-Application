@@ -2,7 +2,7 @@ import styles from "./banner.module.css"
 
 import Image from "next/image"
 
-import { useRouter } from 'next/router' 
+import { useRouter } from 'next/router'
 
 const Banner = (props) => {
     const {title, subTitle, imgUrl, videoId} = props
@@ -15,6 +15,7 @@ const Banner = (props) => {
 
     return (
         <div className={styles.container}>
+            <h2 className={styles.newsTitle}>News</h2>
             <div className={styles.leftWrapper}>
                 <div className={styles.left}>
                     <h3 className={styles.title}>{title}</h3>
@@ -27,14 +28,14 @@ const Banner = (props) => {
                                 width={32}
                                 height={32}
                             /> */}
-                            <span className={styles.playText}>Read</span>
+                            <span className={styles.playText}>Trailer</span>
                         </button>
                     </div>
                 </div>
             </div>
             <div
-                className={styles.bannerImg} 
-                style={{ 
+                className={styles.bannerImg}
+                style={{
                     background: `url(${imgUrl})`,
                     width: "100%",
                     height: "100%",
@@ -43,7 +44,7 @@ const Banner = (props) => {
                     backgroundPosition: "50% 50%",
                     opacity: "0.7"
                 }}
-            ></div>  
+            ></div>
         </div>
     )
 }

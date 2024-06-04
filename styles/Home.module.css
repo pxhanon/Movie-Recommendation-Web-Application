@@ -11,17 +11,18 @@
   padding-top: 70px;
 }
 
-
-/* .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.me {
+  padding-left: 34rem;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  color: var(--gray20);
+  letter-spacing: 3px
 }
+/*
+.main {
+  min-height: 100vh;
 
+}
 .footer {
   display: flex;
   flex: 1;

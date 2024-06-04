@@ -5,6 +5,9 @@ import styles from '../styles/Home.module.css'
 import Banner from "../components/banner/banner"
 import NavBar from '../components/nav/navbar'
 import SectionCards from '../components/card/section-cards'
+import Dropdown from '../components/dropdown/dropdown'
+
+import React, { useState, useEffect } from 'react'
 
 export default function Home() {
   const disneyVideos = [
@@ -31,6 +34,21 @@ export default function Home() {
     }
   ]
 
+//  let [data, setData] = useState([])
+
+//     useEffect(() => {
+//         getData()
+//   }, [])
+
+
+//   let getData = async () => {
+
+//     let response = await fetch('http://127.0.0.1:8000/api/myapiview/')
+//     let data = await response.json()
+//     console.log(data);
+//     setData(data)
+//   }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -39,19 +57,32 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar username="pxhanonxhumparat@gmail.com" />
-      <Banner
-        videoId="F4P6GeC6gcs"
-        title="The Dark Knight Rises"
-        subTitle="The legend ends July 20 experience it in IMAX"
-        imgUrl="/static/cover-4.jpeg"
-      />
 
-        <div className={styles.sectionWrapper}>
+      {/* <div className="notes-list">
+        {notes.map((note, index) => (
+          <h3 key={index}>{note.body}</h3>
+        ))}
+      </div> */}
+
+      {/* <div>
+        <h1>{data.name}</h1>
+        <h2>{data.age}</h2>
+      </div> */}
+
+      <Dropdown />
+      <Banner
+        videoId="qEVUtrk8_B4"
+        title="John Wick : Chapter 4"
+        subTitle="It's time to count down to the fateful day together with John Wick Chapter 4 – March 23, 2023 in cinemas."
+        imgUrl="/static/johnwicksch4.jpeg"
+      />
+      <h5 className={styles.me}>created by Chanon Chumparat</h5>
+        {/* <div className={styles.sectionWrapper}>
           <SectionCards title='Disney' videos={disneyVideos} size='large' />
           <SectionCards title='Travel' videos={travelVideos} size='small' />
           <SectionCards title='Productivity' videos={productivityVideos} size='small' />
           <SectionCards title='Popular' videos={popularVideos} size='small' />
-        </div>
+        </div> */}
       {/* <Card imgUrl='/static/cover-1.jpg' size='large' />
       <Card size='medium' />
       <Card imgUrl='/static/cover-1.jpg' size='small' /> */}

@@ -4,13 +4,13 @@
     position: fixed;
     top: 0px;
     /* background-image: linear-gradient(to bottom, var(--gradient-stops)); */
-  
+
     /* --gradient-from: var(--black);
     --gradient-stops: var(--gradient-from), var(--gradient-to, rgba(0, 0, 0, 0)); */
     width: 100%;
     z-index: 100;
   }
-  
+
   .wrapper {
     padding-left: 1rem
       /* 16px */
@@ -23,7 +23,7 @@
       /* 20px */
     ;
   }
-  
+
   .logoLink {
     display: flex;
     font-weight: 300;
@@ -39,7 +39,7 @@
     color: var(--white10);
   }
 
-  
+
   .logoWrapper {
     width: 8rem
       /* 128px */
@@ -47,7 +47,7 @@
     font-size: 30px;
     font-weight: 300;
   }
-  
+
   .navItems {
     color: var(--white30);
     display: flex;
@@ -60,13 +60,18 @@
       /* 14px */
     ;
     font-size: 1rem;
-  
+
     line-height: 1.25rem
       /* 20px */
     ;
     list-style: none;
   }
-  
+
+  .logoRec {
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .navItem {
     font-weight: 500;
     font-size: 1rem;
@@ -79,7 +84,7 @@
   .navItem:hover {
     color: var(--white10);
   }
-  
+
   .navItem2 {
     cursor: pointer;
   }
@@ -87,20 +92,20 @@
   .navItem2:hover {
     color: var(--white10);
   }
-  
+
   .navContainer {
     display: flex;
     align-items: flex-start;
     margin-left: auto;
   }
-  
+
   .usernameBtn {
     display: flex;
     align-items: center;
     overflow: hidden;
     color: var(--white);
   }
-  
+
   .username {
     font-size: 1rem;
     color: var(--white30);
@@ -109,7 +114,7 @@
   .username:hover {
     color: var(--white10);
   }
-  
+
   .navDropdown {
     right: 65px;
     position: absolute;
@@ -127,13 +132,13 @@
     border-radius: 0.25rem
       /* 4px */
     ;
-  
+
     border-color: var(--blue);
-  
+
     box-shadow: var(--shadow30, 0 0 #0000), var(--ring-shadow, 0 0 #0000),
       var(--shadow30);
   }
-  
+
   .linkName {
     transition-property: background-color, border-color, color, fill, stroke;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -146,7 +151,7 @@
       /* 8px */
     ;
     padding-top: 0.4rem;
-    
+
     font-size: 0.85rem
       /* 16px */
     ;
@@ -158,11 +163,11 @@
     ;
     cursor: pointer;
   }
-  
+
   .linkName:hover {
     color: var(--white10);
   }
-  
+
   .lineWrapper {
     padding-top: 0.5rem
       /* 8px */
@@ -171,7 +176,7 @@
       /* 8px */
     ;
   }
-  
+
   @media (min-width: 768px) {
     .wrapper {
       padding-left: 4rem
@@ -183,17 +188,17 @@
       flex-direction: row;
       align-items: center;
     }
-  
+
     .logoLink {
       margin-bottom: 0px;
     }
-  
+
     .navItems {
       margin-left: 3rem
         /* 48px */
       ;
     }
-  
+
     .navItem {
       margin-right: 2rem
         /* 20px */
@@ -202,5 +207,5 @@
   }
 
   /* @media (min-width: 1024px) {
-    
+
   } */

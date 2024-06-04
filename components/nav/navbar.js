@@ -62,6 +62,13 @@ const NavBar = () => {
           <div className={styles.wrapper}>
             <Link className={styles.logoLink} href="/">
               <div className={styles.logoWrapper}>
+                <Image
+                  src="/static/rec_icon2.svg"
+                  alt="Rec icon"
+                  width={32}
+                  height={32}
+                  className={styles.logoRec}
+                />
                 {/* <Image
                   src="/static/netflix.svg"
                   alt="Netflix logo"
@@ -71,14 +78,14 @@ const NavBar = () => {
                 R E C
               </div>
             </Link>
-    
+
             <ul className={styles.navItems}>
               <li className={styles.navItem} onClick={handleOnClickHome}>
                 Home
               </li>
-              <li className={styles.navItem2} onClick={handleOnClickMyList}>
+              {/* <li className={styles.navItem2} onClick={handleOnClickMyList}>
                 My List
-              </li>
+              </li> */}
             </ul>
             <nav className={styles.navContainer}>
               <div>
@@ -92,7 +99,7 @@ const NavBar = () => {
                     height={20}
                   />
                 </button>
-    
+
                 {showDropdown && (
                   <div className={styles.navDropdown}>
                     <div>

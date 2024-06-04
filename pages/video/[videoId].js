@@ -13,11 +13,11 @@ Modal.setAppElement('#__next');
 export async function getStaticProps() {
     //data to fetch from API
     const video = {
-        title: "Hi cute dog",
-        publishTime: "1990-01-01",
-        description: "A big red dog that is super cute, can he get any bigger? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
-        channelTitle: "Paramount Pictures",
-        viewCount: 10000,
+        title: "John Wick : Chapter 4",
+        publishTime: "2023-03-23",
+        description: "John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
+        channelTitle: "Keanu Reeves",
+        viewCount: 340,
     };
 
     return {
@@ -33,7 +33,7 @@ export async function getStaticPaths() {
     const paths = listOfVideos.map((videoId) => ({
       params: { videoId },
     }));
-  
+
     return { paths, fallback: "blocking" };
 }
 

@@ -1,0 +1,124 @@
+.container {
+    width: 50%;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: 365px;
+}
+
+.wrapper {
+    padding-top: 1rem;
+    display: flex;
+}
+
+.movieRecom {
+    padding-left: 4rem;
+    padding-bottom: 1.5rem;
+    /* letter-spacing: 1.2px; */
+    font-weight: 400;
+}
+
+.selectDropdown {
+    width: 100%;
+}
+
+.subTitle {
+    font-size: 1.8rem /* 18px */;
+    font-weight: 300;
+    line-height: 1.75rem /* 28px */;
+    color: var(--white10);
+    padding-bottom: 1.5rem;
+    margin-left: 100px;
+    /* -webkit-text-stroke: 1px gray;  */
+    /* width and color */
+}
+
+.btnWithIcon {
+    padding-left: 2rem;
+}
+
+.sectionWrapper2 {
+    display: flex;
+    padding-top: 1.7rem;
+    padding-bottom: 1.5rem;
+    margin-top: 1.5rem
+        /* 24px */
+    ;
+    /* margin-right: 0.75rem */
+        /* 12px */
+    ;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.selectionWrapper {
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: var(--blue40);
+    width: 95%;
+    margin-left: 2.2rem;
+    height: 70vh;
+    position: relative;
+    border-radius: 0.5rem;
+}
+
+
+.movieName {
+    padding-top: 4rem;
+}
+
+.descriptionTitle {
+    padding-left: 2rem;
+    padding-top: 1.8rem;
+    font-weight: 400;
+}
+
+.description {
+    padding-top: 1.7rem;
+    padding-left: 1rem;
+    padding-right: 10rem;
+    left: 0;
+    line-height: 1.6;
+    font-weight: 300;
+    color: var(--gray20)
+}
+
+.sectionWrapper1 {
+    display: flex;
+}
+
+.description1 {
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    line-height: 1.6;
+    color: var(--gray20)
+}
+
+.readMore {
+    padding-left: 8.5rem;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--blue20);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.readMore:hover {
+    color: var(--gray20)
+}
+
+.showLess {
+    padding-left: 17rem;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--blue20);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.showLess:hover {
+    color: var(--gray20)
+}
